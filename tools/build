@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# run hugo for production build
+
+cd $(dirname $0)/..
+set -x
+hugo $@

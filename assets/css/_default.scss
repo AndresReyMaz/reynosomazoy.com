@@ -1,0 +1,211 @@
+// Default to border-box
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* --- Typographical Elements --- */
+
+body {
+  background-color: $white;
+  color: $night-rider;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 1.125rem; // 18px
+  line-height: 1.8;
+}
+
+a {
+  border-bottom: 1px solid $gainsboro;
+  color: $flamingo;
+  text-decoration: none;
+
+  &:hover {
+    color: $night-rider;
+  }
+
+  &:has(> img) {
+    border-bottom: none;
+  }
+}
+
+p {
+  margin: 0 0 1.5em;
+  padding: 0;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+blockquote, blockquote::before {
+  color: $dim-gray;
+}
+
+blockquote {
+  margin: 1.5em 3em;
+}
+
+blockquote::before {
+  content: "\201C";
+  display: block;
+  font-size: 2em;
+  height: 0;
+  left: -20px;
+  position: relative;
+  top: -10px;
+}
+
+
+/* --- Headings --- */
+
+h1, h2, h3, h4, h5, h6 {
+  color: $night-rider;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+
+/* --- Objects --- */
+
+embed,
+iframe,
+img,
+object,
+video {
+  max-width: 100%;
+}
+
+
+/* --- Forms --- */
+
+input,
+select,
+textarea {
+  background-color: $white;
+  border: 1px solid $gainsboro;
+  box-shadow: 1px 1px 3px lighten($gainsboro, 5%) inset;
+  color: $dim-gray;
+  font-size: 1rem;
+  padding: 0.5em 1em;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid $nobel;
+  outline: none;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+.entry-content .button {
+  background-color: $night-rider;
+  border: none;
+  box-shadow: none;
+  color: $white;
+  cursor: pointer;
+  width: auto;
+
+  &:hover {
+    background-color: $flamingo;
+  }
+}
+
+.button {
+  display: inline-block;
+}
+
+/* --- Tables --- */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  line-height: 2;
+  margin-bottom: 2.5rem;
+  width: 100%;
+}
+
+tbody {
+  border-bottom: 1px solid $gainsboro;
+}
+
+th, td {
+  text-align: left;
+}
+
+th {
+  font-weight: bold;
+}
+
+td {
+  border-top: 1px solid $gainsboro;
+  padding: 0.6rem 0;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0 0 1.5em 2.5em;
+}
+
+code, kbd, pre, samp {
+  font-family: "Source Code Pro", monospace;
+}
+
+pre {
+  background: $white-smoke;
+  border: solid 1px $gainsboro;
+  border-radius: 3px;
+  color: #000;
+  hyphens: none;
+  line-height: 1.2;
+  overflow: auto;
+  padding: 0.5em 0.75em;
+  tab-size: 2;
+}
+
+code {
+  font-family: "Source Code Pro", monospace;
+  font-size: 1rem;
+}
+
+:not(pre) > code {
+  background: $white-smoke;
+  color: #000;
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}
+

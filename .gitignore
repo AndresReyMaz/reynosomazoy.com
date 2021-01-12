@@ -1,0 +1,11 @@
+log
+public
+tmp
+_gen
+
+etc/fullchain.pem
+etc/privkey.pem
+
+content/posts/drafts
+
+.vscode

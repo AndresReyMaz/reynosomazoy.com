@@ -1,0 +1,34 @@
+baseURL: "http://www.reynosomazoy.com/"
+languageCode: "en-us"
+title: "reynosomazoy.com"
+
+params:
+  description: "a personal website"
+  author:
+    name: "Andrés Reynoso Mazoy"
+    url: "https://reynosomazoy.com/"
+    twitter: "@AndresMazoy"
+  twitter_card: "summary"
+  twitter: "@AndresMazoy"
+
+disableHugoGeneratorInject: true
+
+permalinks:
+  posts: "/:year/:month/:filename/"
+
+# disable taxonomy pages
+taxonomies: []
+
+mediaTypes:
+  application/atom+xml:
+    suffixes: [xml]
+
+outputFormats:
+  atom:
+    basename: atom
+    isPlainText: false
+    mediaType: application/atom+xml
+
+outputs:
+  home: [html, atom]
+  section: [html]
