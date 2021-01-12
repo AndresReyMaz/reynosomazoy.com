@@ -5,7 +5,7 @@ menu: "main"
  <div class="h-card vcard">
 
 Hi, I'm <a href="https://reynosomazoy.com/" class="p-name u-url fn url">Andrés Reynoso Mazoy</a>.
-I'm a follower of Jesus, a citizen of North America, and a <span class="p-role role">software
+I'm a follower of Jesus, a citizen of North America 🇲🇽 🇺🇸, and a <span class="p-role role">software
 engineer</span> at <span class="p-org org">Google</span>.
 </div>
 
