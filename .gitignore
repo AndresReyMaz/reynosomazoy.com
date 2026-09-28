@@ -9,3 +9,4 @@ etc/privkey.pem
 content/posts/drafts
 
 .vscode
+.hugo_build.lock
